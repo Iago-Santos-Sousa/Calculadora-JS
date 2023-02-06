@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #0F9D58;
+}
+
+:root {
+  --bg-color: #212529;
+  --border-color: #666;
+  --font-color: #f1f5f9;
+  --primary-color: #4dff91;
+  --error-color: #ff0043;
+}
+
+body {
+  height: 100vh;
+  /* color: var(--font-color); */
+  font-family: 'Ubuntu', sans-serif;
+}
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 0.25rem;
+}
+
+button {
+  background-color: #ffffff;
+  /* border: none; */
+  border-radius: 0.25rem;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  transition: 0.15s;
+  border: solid #4285F4;;
+}
+
+input[type=text] {
+  border: 2px solid #0F9D58;
+  border-radius: 0.5rem;
+  display: block;
+  font-size: 1.75rem;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: end;
+  width: 19.8rem;
+  outline: none;
+}
+
+input[type=text]:focus {
+  border: 2px solid #4285F4;
+}
+
+#keys {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  border-radius: 15px;
+  padding: 2px;
+  gap: 0.5rem;
+  max-width: 20rem;
+  margin: auto;
+}
+
+#keys button {
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 0.8rem;
+}
+
+#keys button:hover {
+  filter: brightness(0.8);
+}
+
+#result {
+  border-width: 2px 2px 2px 0;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
